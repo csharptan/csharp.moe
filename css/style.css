@@ -1,0 +1,18 @@
+#moe span {
+    display: inline-block;
+    text-shadow: white 1px 1px 0px, white -1px 1px 0px,
+             white 1px -1px 0px, white -1px -1px 0px;
+}
+
+#moe span:last-child {
+    color: #71aa49;
+}
+
+#moe span:nth-child(even) {
+    color: #ecd681;
+}
+
+#moe span:first-child  {
+    color: #d0e28e;
+}
+
