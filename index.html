@@ -4,6 +4,7 @@
 // 今日もC#たんがかわいい
 using CSharp.Moe;
 -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,7 @@ using CSharp.Moe;
     <title>CSharp.moe</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -23,16 +24,42 @@ using CSharp.Moe;
 </head>
 
 <body>
+    <nav class="navbar navbar-default navbar-csharp no-margin">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CSharp.moe</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="http://image.csharp.moe/">Gallary</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p><img src="images/csharptan_sd.png"></p>
+                    <p><img src="img/csharptan_sd.png"></p>
                 </div>
                 <div class="col-md-6">
                     <h1 id="moe">CSharp.<span>m</span><span>o</span><span>e</span></h1>
                     <p class="lead">Visual Studioと.NETとC#たんを応援するサイトです。</p>
                     <ul class="list-inline">
+                        <li>
+                            <a href="about.html" class="btn btn-default btn-lg"><i class="fa fa-heart fa-fw"></i>About C#たん</a>
+                        </li>
+
+
                         <li>
                             <a href="http://image.csharp.moe" class="btn btn-default btn-lg"><i class="fa fa-picture-o fa-fw"></i>Tumblr</a>
                         </li>
@@ -82,7 +109,7 @@ using CSharp.Moe;
 
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 
 </body>
 
