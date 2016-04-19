@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
-<!-- 
+<!--
 // 今日もC#たんがかわいい
 using CSharp.Moe;
 -->
@@ -13,16 +13,18 @@ using CSharp.Moe;
     <title>CSharp.moe</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-        crossorigin="anonymous">
+          crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
+            crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="js/about.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet" />
 
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -45,7 +47,8 @@ using CSharp.Moe;
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="#">About</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="illustration.html">Illustration</a></li>
                     <li><a href="http://image.csharp.moe/">Gallary</a></li>
                 </ul>
             </div>
@@ -56,8 +59,8 @@ using CSharp.Moe;
         <div class="container">
             <div class="row">
                 <ul class="nav nav-tabs nav-tabs-button">
-                    <li class="active"><a href="#profile" data-toggle="tab">PROFILE</a></li>
-                    <li><a href="#history" data-toggle="tab">HISTORY</a></li>
+                    <li class="active"><a href="#cstan" data-toggle="tab">C#たん</a></li>
+                    <li><a href="#family" data-toggle="tab">仲間たち</a></li>
                 </ul>
             </div>
         </div>
@@ -65,29 +68,28 @@ using CSharp.Moe;
     <div class="container">
 
         <div class="tab-content">
-            <!-- profile -->
-            <div class="tab-pane active" id="profile">
+            <!-- csharptan -->
+            <div class="tab-pane active" id="cstan">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-2">
                         <p><img class="wow fadeIn" data-wow-delay="1000ms" src="img/csharptan_sd.png"></p>
                     </div>
 
                     <div class="col-md-6">
-                        <h1 id="moe" class="wow fadeInRight">C#たん</h1>
+                        <h1 class="wow fadeInUp">C#たん</h1>
                         <p class="lead lead-message wow bounceIn" data-wow-delay="600ms">「萌えればいいってもんじゃないですよ？」</p>
                         <p class="wow fadeIn" data-wow-delay="1000ms">
                             英才教育を受けて育った良家のお子様。 やるならとことん容赦なくやってしまう、目的のためなら手段選ばないタイプ。 その性格故か、しばしば合理性突き詰めた極論を言い出す事も多い。
                         </p>
-                        <div class="info-box wow fadeIn" data-wow-delay="1200ms">
+                        <div class="info-box info-box-narrow wow fadeIn" data-wow-delay="1200ms">
                             <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>プロフィール</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
                                 <tbody>
-                                    <thead>
-                                        <tr>
-                                            <th>プロフィール</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-
                                     <tr>
                                         <th>身長</th>
                                         <td>142cm</td>
@@ -100,34 +102,543 @@ using CSharp.Moe;
                                         <th>3サイズ</th>
                                         <td>66・56・68</td>
                                     </tr>
-
                                     <tr>
                                         <th>性別</th>
                                         <td>不明</td>
                                     </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row wow fadeIn">
+                    <h2 class="pop-heading">設定資料集</h2>
+                    <div class="row image-list">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_01.jpg" rel="lightbox" data-title="C#たん最初期">
+                                    <img src="img/cstan/s1_01.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>最初期</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_02.jpg" rel="lightbox" data-title="C#たん制服ver.">
+                                    <img src="img/cstan/s1_02.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>制服ver.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_03.jpg" rel="lightbox" data-title="C#たん魔法使いver.">
+                                    <img src="img/cstan/s1_03.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法使いver.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_04.jpg" rel="lightbox" data-title="C#たん 魔法設定">
+                                    <img src="img/cstan/s1_04.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法設定</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_05.jpg" rel="lightbox" data-title="C#たん 表情集1">
+                                    <img src="img/cstan/s1_05.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>表情集1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_06.jpg" rel="lightbox" data-title="C#たん 表情集2">
+                                    <img src="img/cstan/s1_06.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>表情集2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_07.jpg" rel="lightbox" data-title="C#たん 髪型">
+                                    <img src="img/cstan/s1_07.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>髪型</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_08.jpg" rel="lightbox" data-title="C#たん 服装">
+                                    <img src="img/cstan/s1_08.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>服装</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s1_09.jpg" rel="lightbox" data-title="C#たん 服装2">
+                                    <img src="img/cstan/s1_09.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>服装2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row wow fadeIn">
+                    <h2 class="pop-heading">カラーCG</h2>
+                    <div class="row image-list">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_01.jpg" rel="lightbox" data-title="カラー絵ラフ">
+                                    <img src="img/cstan/s2_01.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>カラー絵ラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_02.jpg" rel="lightbox" data-title="カラー絵">
+                                    <img src="img/cstan/s2_02.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>カラー絵</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_03.jpg" rel="lightbox" data-title="立ち絵">
+                                    <img src="img/cstan/s2_03.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>立ち絵</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_04.jpg" rel="lightbox" data-title="○○○○ラフ">
+                                    <img src="img/cstan/s2_04.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>○○○○ラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_05.jpg" rel="lightbox" data-title="○○○○">
+                                    <img src="img/cstan/s2_05.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>○○○○</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_06.jpg" rel="lightbox" data-title="C#たん 魔法CGラフ">
+                                    <img src="img/cstan/s2_06.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法CG ラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_07.jpg" rel="lightbox" data-title="C#たん 魔法">
+                                    <img src="img/cstan/s2_07.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法CG</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s2_08.jpg" rel="lightbox" data-title="C#たん 魔法使いCG">
+                                    <img src="img/cstan/s2_08.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法使いCG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row wow fadeIn">
+                    <h2 class="pop-heading">デフォルメ</h2>
+                    <div class="row image-list">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s3_01.jpg" rel="lightbox" data-title="3Dモデル デザイン">
+                                    <img src="img/cstan/s3_01.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>3Dモデル デザイン</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s3_02.png" rel="lightbox" data-title="3Dモデル">
+                                    <img src="img/cstan/s3_02.png">
+                                </a>
+                                <div class="caption">
+                                    <p>3Dモデル</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s3_03.jpg" rel="lightbox" data-title="デフォルメラフ">
+                                    <img src="img/cstan/s3_03.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>デフォルメラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s3_04.jpg" rel="lightbox" data-title="デフォルメラフ2">
+                                    <img src="img/cstan/s3_04.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>デフォルメラフ2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/cstan/s3_05.jpg" rel="lightbox" data-title="デフォルメラフ3">
+                                    <img src="img/cstan/s3_05.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>デフォルメラフ3</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- /csharptan -->
+            <!-- family -->
+            <div class="tab-pane" id="family">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1 wow fadeIn" data-wow-delay="1000ms">
+                        <div class="thumbnail thumbnail-noborder">
+                            <a href="img/family/family.jpg" rel="lightbox" data-title="C#たん・VBたん・C++たん">
+                                <img src="img/family/family.jpg">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h1 class="wow fadeInUp">VBたん・C++たん・F#たん</h1>
+                        <div class="info-box wow fadeIn" data-wow-delay="1200ms">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>プロフィール</th>
+                                        <th></th>
+                                        <th></th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>名前</th>
+                                        <td>VBたん</td>
+                                        <td>C++たん</td>
+                                        <td>F#たん</td>
+                                    </tr>
+                                    <tr>
+                                        <th>身長</th>
+                                        <td>159cm</td>
+                                        <td>172cm</td>
+                                        <td>140cm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>体重</th>
+                                        <td>52kg</td>
+                                        <td>60kg</td>
+                                        <td>34kg</td>
+                                    </tr>
+                                    <tr>
+                                        <th>スリーサイズ</th>
+                                        <td>86・65・87</td>
+                                        <td>88・61・87</td>
+                                        <td>68・53・68</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
 
                     </div>
                 </div>
-            </div>
-            <!-- /profile -->
 
-            <!-- history -->
-            <div class="tab-pane" id="history">
-                <div class="row">
-                    <div class="col-md-6">
+
+                <div class="row wow fadeIn">
+                    <h2 class="pop-heading-vb">VBたん</h2>
+
+                    <div class="row image-list">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/vb_01.jpg" rel="lightbox" data-title="VBたん最初期">
+                                    <img src="img/family/vb_01.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>最初期</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/vb_02.jpg" rel="lightbox" data-title="VBたん">
+                                    <img src="img/family/vb_02.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>VBたん</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/vb_03.jpg" rel="lightbox" data-title="昔のVBたん">
+                                    <img src="img/family/vb_03.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>昔のVBたん</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/vb_04.jpg" rel="lightbox" data-title="VBたん 魔法少女ラフ">
+                                    <img src="img/family/vb_04.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法少女ラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/vb_05.jpg" rel="lightbox" data-title="VBたん 魔法少女ラフ2">
+                                    <img src="img/family/vb_05.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法少女ラフ2</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
-                    <div class="col-md-6">
-                        <h1 id="moe" class="wow fadeInRight">歴史</h1>
-                        <p class="lead wow bounceIn" data-wow-delay="600ms">C#たんの誕生からいままで</p>
-                        <p class="wow fadeIn" data-wow-delay="1000ms">COMING SOON</p>
-                    </div>
+
                 </div>
+
+                <div class="row wow fadeIn">
+                    <h2 class="pop-heading-cpp">C++たん</h2>
+
+                    <div class="row image-list">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_01.jpg" rel="lightbox" data-title="C++たん">
+                                    <img src="img/family/cpp_01.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>最初期</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_02.jpg" rel="lightbox" data-title="C++たん魔法Ver.">
+                                    <img src="img/family/cpp_02.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法Ver.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_03.jpg" rel="lightbox" data-title="C++たん魔法Ver.2">
+                                    <img src="img/family/cpp_03.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法Ver.2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_04.jpg" rel="lightbox" data-title="C++たん服装">
+                                    <img src="img/family/cpp_04.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>服装</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_05.jpg" rel="lightbox" data-title="C++たん服装2">
+                                    <img src="img/family/cpp_05.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>服装2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_06.jpg" rel="lightbox" data-title="C++たん服装3">
+                                    <img src="img/family/cpp_06.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>制服3</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/cpp_07.jpg" rel="lightbox" data-title="C++たん魔法少女ラフ">
+                                    <img src="img/family/cpp_07.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>魔法少女ラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="row wow fadeIn">
+                    <h2 class="pop-heading-fs">F#たん</h2>
+
+                    <div class="row image-list">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/fs_01.jpg" rel="lightbox" data-title="F#たんラフ">
+                                    <img src="img/family/fs_01.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>ラフ</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/fs_02.jpg" rel="lightbox" data-title="F#たんラフ2">
+                                    <img src="img/family/fs_02.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>ラフ2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/fs_03.jpg" rel="lightbox" data-title="F#たん刀資料">
+                                    <img src="img/family/fs_03.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>刀資料</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                            <div class="thumbnail">
+                                <a href="img/family/fs_04.jpg" rel="lightbox" data-title="F#たん刀資料2">
+                                    <img src="img/family/fs_04.jpg">
+                                </a>
+                                <div class="caption">
+                                    <p>刀資料2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
-            <!-- /history -->
+            <!-- /family -->
         </div>
     </div>
 
@@ -137,11 +648,18 @@ using CSharp.Moe;
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <p class="text-muted">&copy; 2016 <a href="http://csharp.moe/">CSharp-tan Foundation</a></p>
+                    <p class="text-muted">
+                        &copy; 2016 <a href="http://csharp.moe/">CSharp-tan Foundation</a>
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+
 </body>
 
 </html>
