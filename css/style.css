@@ -44,6 +44,11 @@
     font-weight: bold;
 }
 
+.caption .author {
+    font-size: 0.5em;
+    line-height: 0.5em;
+}
+
 .submenu {
     background: #eee;
 }
@@ -54,18 +59,18 @@
 
 .image-list .thumbnail {
     background-color: whitesmoke !important;
-    min-height: 285px;
+    min-height: 300px;
 }
 
 @media (max-width: 1200px) {
     .image-list .thumbnail {
-        min-height: 240px;
+        min-height: 255px;
     }
 }
 
 @media (max-width: 992px) {
     .image-list .thumbnail {
-        min-height: 370px;
+        min-height: 390px;
     }
 }
 
