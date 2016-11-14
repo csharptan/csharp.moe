@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 .no-margin {
     margin: 0;
 }
@@ -327,6 +329,7 @@
     background-size: 100% 1.5em;
     padding: 0 2em;
     line-height:1.5em;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.5em;
     color: #585858;
 }
