@@ -341,3 +341,8 @@
 .note-paper > p:first-letter {
     margin-left: 1em;
 }
+
+.colorized {
+    color: #33aa33;
+    font-weight: bold;
+}
