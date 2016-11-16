@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<!-- 
+// 今日もC#たんがかわいい
+using CSharp.Moe;
+-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSharp.moe</title>
+
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../../js/about.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-csharp no-margin">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">CSharp.moe</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../about.html">About</a></li>
+                    <li><a href="../../illustration.html">Illustration</a></li>
+                    <li><a href="http://image.csharp.moe/">Gallary</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Goods<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ぬいぐるみ</a></li>
+                            <li><a href="../keyholder/index.html">キーホルダー</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-short-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p><img class="img-responsive" src="img/head.png"></p>
+                </div>
+                <div class="col-md-6">
+                    <h1>ぬいぐるみ</h1>
+                    <p class="lead">C#たんのかわいい20cmぬいぐるみ、<br>いよいよ量産開始です。</p>
+                    <div class="divider"></div>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#editions" class="btn btn-default btn-lg">
+                                <i class="fa fa-shopping-cart fa-fw"></i>&nbsp;Buy now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="point-banner">
+        <div class="container">
+            <h2 class="pop-heading">企画者がおすすめする<br>3つのポイント</h2>
+        </div>
+    </div>
+
+    <div id="point-1" class="content-spacer content-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="bold-spacer">
+                    <h2 class="clearfix">1. C#ロゴは立体で表現</h2>
+                    <p class="lead">C#たんのチャームポイントと言っても良いC#ロゴ。C#たんをより可愛らしくするために、ロゴは印刷ではなく立体で表現しました。</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive image-full" src="img/ornament.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="point-2" class="content-spacer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="bold-spacer">
+                    <h2 class="clearfix">2. 髪の毛にはボア生地を採用 </h2>
+                    <p class="lead">ぬいぐるみの髪の毛には、触り心地の良いボア生地を採用しました。頭の撫ですぎには注意してくださいね。</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/hair.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="point-3" class="content-spacer content-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="bold-spacer">
+                    <h2 class="clearfix">3. 犬耳クセ毛も再現</h2>
+                    <p class="lead">C#たんの犬耳のようなクセ毛もボア生地を使って再現しました。ぴょんと跳ねるクセ毛が、C#たんをよりキュートに魅せてくれます。</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive image-full" src="img/kemoear.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="note-banner">
+        <div class="container">
+            <h2 class="pop-heading-vb">ぬいぐるみにかける<br>企画者の想い</h2>
+        </div>
+    </div>
+
+    <div id="note" class="content-spacer content-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                    <div class="note-paper">
+                        <p>今回はC#たん初のぬいぐるみ、さらには私自身も初のグッズ作成（ただしステッカーは除く）ということで、「いきなりぬいぐるみ製作とかやっぱり厳しいのでは！？」と何度も挫けそうになりましたが、いよいよ量産という段階まで無事に進めることが出来て、とてもホッとしています。</p>
+                        <p>ぬいぐるみの製作会社とは何度もやり取りを行い、無理を言って多くの要望を実現していただきました。 何度もサンプルの修正・再製作を行い、皆さまに、そしてC#たんの大ファンである私自身が納得できる完成度まで仕上げられるよう、出来る限りの努力をしました。
+                            ここまで仕上げられたのは、C#たんの産みの親である
+                            <a href="https://twitter.com/ufcpp" target="_blank">@ufcpp</a>さんや、 デザインに関してご意見をくださった<a href="https://twitter.com/mitsuba_tan"
+                                target="_blank">@mitsuba_tan</a>さん、<a href="https://twitter.com/kanreisa" target="_blank">@kanreisa</a>さん、
+                            <a href="http://devcussion.connpass.com/" target="_blank">devcussion</a>の皆さん、その他多くの方々のお力添えのおかげです。
+                            このぬいぐるみは、
+                            <strong>多くの皆さんの「C#たん愛」の結晶体</strong>であると言っても過言ではないでしょう。</p>
+                        <p>さて、このページを見ている皆様に１点お詫びしなければならないことがあります。それはぬいぐるみの価格です。</p>
+                        <p>今回のC#たんのぬいぐるみは1体約4000円にて発売する予定ですが、平均的なぬいぐるみ価格としては少々高くなってしまったかと思います。 通常ぬいぐるみを量産するときは、1つのデザインで数千体というロットで製作する場合が多く、そのような場合であれば単価をかなり下げることが出来ます。
+                            しかし今回のように少数の量産を行う場合は、1体あたりの単価はどうしても高くなってしまいます。 何社にも見積もりをお願いし、最も安い金額を提示してくれたところに、製作を依頼しました。
+                        </p>
+                        <p>そのうえで、より多くの方々にC#たんぬいぐるみを手に取ってもらうために、今回のぬいぐるみの金額は「もし全て100体すべて売れたとしたら、100体量産時の原価がギリギリ回収できる」ような金額に設定いたしました。
+                            この金額には、ぬいぐるみを製作するにあたってかかった型紙代などは一切含まれていません。 私たちが「C#たんぬいぐるみ」を作る理由は
+                            <strong>決して金銭的利益を得るためではない</strong>という点だけは、皆様にご理解いただければと思います。</p>
+                        <p>また、今回は通常版のほかに「<a href="#special-edition">C#たん支援版</a>」を用意しました。 これは
+                            <strong>今回のぬいぐるみ製作にかかった費用等のサポートをしていただける方向け</strong>に料金が高めに設定されたものとなっています。
+                            <strong>ぬいぐるみの種類は通常版と同様</strong>ですが、こちらを購入された方には<strong>ささやかな記念品</strong>を一緒にプレゼントいたします。 全国のC#たんファンの皆様、どうぞお力添えをお願いします。
+                        </p>
+                        </p>最後に、<strong>多くのC#たんファンの方にぬいぐるみを手にとってもらえること</strong>を、そして<strong>より多くの方にC#たんの魅力を感じてもらえること</strong>を、心から願っています。</p>
+                        <p>&nbsp;</p>
+                        <p>2016年11月11日 <a href="https://twitter.com/bonprosoft" target="_blank">@bonprosoft</a></p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="editions" class="point-banner">
+        <div class="container">
+            <h2 class="pop-heading">販売商品</h2>
+        </div>
+    </div>
+
+    <div id="notmal-edition" class="content-spacer content-odd">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="bold-spacer">
+                    <h2 class="clearfix">通常版</h2>
+                    <p class="lead">「C#たんぬいぐるみ」が1個購入できる商品です。
+                    </p>
+                    <p class="lead">販売価格： 4000円（税別・送料別）</p>
+                    <p>
+                        <a href="https://csharptan.booth.pm/items/334058" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-shopping-cart fa-fw"></i>&nbsp;Buy now</a>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive image-full" src="img/normaledition.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="special-edition" class="content-spacer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="bold-spacer">
+                    <h2 class="clearfix">C#たん支援版</h2>
+                    <p class="lead">C#たんをサポートしてくださる方向けの商品です。通常料金より高めに価格が設定されています。 差額はC#たんの型紙代等の支払いに充てられます。 サポーターの皆様への感謝の気持ちとして、
+                        <a href="../keyholder/index.html#special-model" target="_blank">特別限定版キーホルダー</a>をプレゼントいたします。
+                    </p>
+                    <p class="lead">販売価格： 6000円（税別・送料別）</p>
+                    <p>※ キーホルダーデザインは写真のものと変更される場合があります。<br>またキーホルダーのお届けは、ぬいぐるみと別々となる可能性がありますので、あらかじめご了承ください。</p>
+                    <p>
+                        <a href="https://csharptan.booth.pm/items/371035" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-shopping-cart fa-fw"></i>&nbsp;Buy now</a>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/specialedition.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallary-banner">
+        <div class="container">
+            <h2 class="pop-heading-fs">ぬいぐるみ<br>ギャラリー</h2>
+        </div>
+    </div>
+
+    <div class="gallary wow fadeIn">
+        <div class="container">
+            <div class="row image-list">
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <a href="img/front.jpg" rel="lightbox" data-title="前から撮影">
+                            <img src="img/front.jpg">
+                        </a>
+                        <div class="caption">
+                            <p>前から撮影</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <a href="img/back.jpg" rel="lightbox" data-title="後ろから撮影">
+                            <img src="img/back.jpg">
+                        </a>
+                        <div class="caption">
+                            <p>後ろから撮影</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <a href="img/top.jpg" rel="lightbox" data-title="上から撮影">
+                            <img src="img/top.jpg">
+                        </a>
+                        <div class="caption">
+                            <p>上から撮影</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <a href="img/lside.jpg" rel="lightbox" data-title="左横参考">
+                            <img src="img/lside.jpg">
+                        </a>
+                        <div class="caption">
+                            <p>左横参考</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <a href="img/rside.jpg" rel="lightbox" data-title="右横参考">
+                            <img src="img/rside.jpg">
+                        </a>
+                        <div class="caption">
+                            <p>右横参考</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                    <div class="thumbnail">
+                        <a href="img/face.jpg" rel="lightbox" data-title="顔正面から撮影">
+                            <img src="img/face.jpg">
+                        </a>
+                        <div class="caption">
+                            <p>顔正面から撮影</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-muted">&copy; 2016 <a href="http://csharp.moe/">CSharp-tan Foundation</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+</body>
+
+</html>
